@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7330c9e80c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/formation.css">
+    <title>Formation</title>
+</head>
+<body>
+    <header class="container-1440">
+        <div id="heak">
+            <a href="/"><img src="img/Logo.png" alt="Logo"></a>
+            <a href="/"><p>Développeur Web et Web Mobile</p></a>
+        </div>
+        <nav>
+            <ul id="submenu">
+                <a href="/"><li>Accueil</li></a>
+                <a href="#"><li>Qui suis-je ?</li></a>
+                <a href="formation.html"><li>Ma formation</li></a>
+                <a href="#"><li>Mes compétences</li></a>
+                <a href="projet.html"><li>Mes projets</li></a>
+                <div>
+                    <input type="checkbox" id="modalCheckbox">
+                    <label for="modalCheckbox" class="contact-label">Contactez-moi</label>
+                    <div class="modal-content">
+                        <label for="modalCheckbox" class="close">&times;</label>
+                        <h2>Me contacter</h2>
+                        <form>
+                            <label for="name">Votre nom:</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                            <label for="email">Votre email:</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+                            <label for="message">Votre message:</label>
+                            <textarea id="message" name="message" cols="30" rows="2" placeholder="Votre message" required></textarea>
+
+                            <button type="submit">Envoyer la demande</button>
+                        </form>
+                    </div>
+                </div>
+            </ul> 
+            <div class="burger_menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>      
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h1>Formation à la carte</h1>
+            <p>4 mois de formation de découverte des métiers de développement</p>
+        </section>
+
+        <section id="section2" class="container-1440">
+            <article>
+                <h3>Formation développement à la carte</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis debitis officia atque modi est animi blanditiis dolorem quasi. Fuga vel voluptatibus doloremque et harum ipsa illum praesentium necessitatibus expedita dolor?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quaerat odit facilis quas quasi tempora, voluptates voluptatum voluptate asperiores, neque dolorum culpa maxime non dolore ad? Accusamus eveniet quidem cum.</p>
+            </article>
+            <img src="img/dev-a-la-carte.png" alt="dev-a-la-carte">
+        </section>
+
+        <section id="section3" class="container-1440">
+            <h2>Mes compétences</h2>
+            <div class="list">
+                <article>
+                    <label for="langages">Langages de programation</label>
+                    <input type="checkbox" id="langages">
+                    <ul class="hidenliste">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
+                </article>
+                <article>
+                    <label for="framework">Frameworks et bibliothèques</label>
+                    <input type="checkbox" id="framework">
+                    <ul class="hidenliste">
+                        <li>React.js</li>
+                        <li>Angular</li>
+                        <li>Vue.js</li>
+                        <li>Jquery</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </article>
+                <article>
+                    <label for="base">Bases de données</label>
+                    <input type="checkbox" id="base">
+                    <ul class="hidenliste">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>SQLite</li>
+                    </ul>
+                </article>
+                <article>
+                    <label for="outil">Outils de développement</label>
+                    <input type="checkbox" id="outil">
+                    <ul class="hidenliste">
+                        <li>Git et Github</li>
+                        <li>Babel</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="list">
+                <article>
+                    <label for="conception">Conception web</label>
+                    <input type="checkbox" id="conception">
+                    <ul class="hidenliste">
+                        <li>Responsive Web Design</li>
+                        <li>Connaissance des principes UX/UI</li>
+                        <li>Adobe XD / Figma / Sketch</li>
+                    </ul>
+                </article>
+                <article>
+                    <label for="service">Services Web</label>
+                    <input type="checkbox" id="service">
+                    <ul class="hidenliste">
+                        <li>APIs Rest</li>
+                        <li>GraphQL</li>
+                    </ul>
+                </article>
+                <article>
+                    <label for="securite">Sécurité</label>
+                    <input type="checkbox" id="securite">
+                    <ul class="hidenliste">
+                        <li>Principes de sécurité web (OWASP)</li>
+                        <li>Gestion des sessions et des cookies</li>
+                        <li>Authentification et autorisation</li>
+                        <li>SSL/TLS</li>
+                    </ul>
+                </article>
+                <article>
+                    <label for="autre">Autres compétences</label>
+                    <input type="checkbox" id="autre">
+                    <ul class="hidenliste">
+                        <li>Testing et débogage</li>
+                        <li>Performances et optimisations</li>
+                        <li>SEO (Search Engine Optimisation)</li>
+                        <li>Accessibilité Web (WCAG)</li>
+                        <li>Gestion de projet et collaboration en équipe</li>
+                        <li>Veille technologique et apprentissag continu</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="section4" class="container-1440">
+            <div>
+                <h2>Mes projets</h2>
+                <a href="#">Voir tous les projets</a>
+            </div>
+            <div>
+                <article>
+                    <img src="img/projet1.PNG" alt="projet1">
+                    <h3>Home Key - Intégration HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia optio aspernatur soluta laudantium! In dignissimos quisquam asperiores. Inventore voluptatibus enim id delectus fugit saepe, molestiae repudiandae illum ipsa doloremque?</p>
+                </article>
+                <a href="#">Lire la suite</a>
+                <article>
+                    <img src="img/projet2.PNG" alt="projet2">
+                    <h3>Vividly - Intégration Mobile First</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia optio aspernatur soluta laudantium! In dignissimos quisquam asperiores. Inventore voluptatibus enim id delectus fugit saepe, molestiae repudiandae illum ipsa doloremque?</p>
+                </article>
+                <a href="#">Lire la suite</a>
+                <article>
+                    <img src="img/projet3.PNG" alt="projet3">
+                    <h3>Portfolio de Développeur Web</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia optio aspernatur soluta laudantium! In dignissimos quisquam asperiores. Inventore voluptatibus enim id delectus fugit saepe, molestiae repudiandae illum ipsa doloremque?</p>
+                </article>
+                <a href="#">Lire la suite</a>
+            </div>
+            <a href="#">Voir plus de projets</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mon super site web !</p>
+    </footer>
+</body>
+</html>

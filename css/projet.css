@@ -1,0 +1,358 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Général */
+
+
+*{
+    margin: 0;
+    scroll-behavior: smooth; 
+    font-family: var(--openSans); 
+}
+
+:root { 
+
+    --openSans: "Open Sans", sans-serif;
+    --raleway: "Raleway", sans-serif;
+    --red:#E7174A;
+    --orange: #FF9A16;
+    --darkBlue: #011826;
+    --vertClair: #2CC1AA;
+    --bgc: #011826;
+    --white: #fff;
+    --black: #000;
+    --borderBtn: #F7FFF2;
+    --double : linear-gradient(90deg, rgba(231,23,74,1) 17%, rgba(255,154,22,1) 72%);
+
+}
+
+body {
+    background-color: var(--darkBlue);
+}
+
+h1 {
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--white);
+}
+
+h2 {
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--white);
+}
+
+
+h3 {
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--white);
+}
+
+p {
+    font-family: var(--openSans);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: var(--orange);
+    font-size: 16px;
+    font-family: var(--openSans);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--red);
+    transition: all 0.2s;
+}
+
+.container-1440 {
+    max-width: 1440px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#heak {
+    flex-direction: column;
+}
+
+#heak > a > img {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    align-content: center;
+}
+
+nav > ul > div > input[type="checkbox"] {
+    display: none;
+}
+
+nav > ul > div > label.contact-label {
+    cursor: pointer;
+    background: var(--orange);
+    color: var(--white);
+    padding: 5px;
+}
+
+nav > ul > div > label.contact-label:hover {
+    background: var(--red);
+}
+
+body > header > nav > ul > a:nth-child(5) > li {
+    color: var(--red);
+}
+
+
+/* Modal styles */
+.modal-content {
+    display: none;
+    position: absolute;
+    top: 85px; 
+    right: 205px;
+    max-width: 250px;
+    background: var(--borderBtn);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+nav > ul > div > input[type="checkbox"]:checked + label.contact-label + .modal-content {
+    display: block;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: -50px;
+    right: 3px;
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 40px;
+    background: none;
+}
+
+.modal-content h2 {
+    color: var(--black);
+}
+
+.modal-content form label {
+    display: block;
+    margin: 15px 0px;
+}
+
+.modal-content form input, .modal-content form textarea {
+    width: 100%;
+    padding: 3px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.modal-content form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: var(--darkBlue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.modal-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Couleur de fond fondu */
+    z-index: -1;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--vertClair);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Section1 */
+
+#section1 {
+    background-color: var(--red);
+    text-align: center;
+    padding: 150px;
+}
+
+/* Section2 */
+
+.proj > a:hover {
+    background-color: var(--red);
+}
+
+#section2 > div {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+#section2 img {
+    max-width: 100%;
+}
+
+.proj article {
+    order: -1;
+    border-left: 1px solid var(--orange);
+    border-right: 1px solid var(--orange);
+    padding: 20px;
+}
+
+.proj a {
+    color: var(--white);
+    border: 1px solid;
+    padding: 10px 15px;
+    width: 90px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.proj a:hover {
+    background-color: var(--red);
+}
+
+#section3 {
+    margin: 20px 0px;
+    gap: 10px;
+    display: flex;
+    place-content: center;
+}
+
+#section3 > div {
+    display: flex;
+    gap: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #submenu {
+        display: none;
+    }
+
+    header > #burger_menu {
+        display: block;
+    }
+
+    header > nav > div > i {
+        color: var(--white);
+    }
+
+    #section2 > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+    
+    .proj-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .proj article {
+        border-left: 1px solid var(--orange);
+        border-right: 1px solid var(--orange);
+        padding: 20px;
+    }
+    
+    .proj a {
+        color: var(--white);
+        border: 1px solid;
+        padding: 10px 15px;
+        width: 90px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        align-self: flex-end;
+    }
+    
+    .proj a:hover {
+        background-color: var(--red);
+    }
+    
+    #section2 img {
+        max-width: 100%;
+    }
+    
+    #section2 > div:nth-child(4) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #section2 > .proj {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+    
+    .proj-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .proj article {
+        flex-grow: 1;
+    }
+    #section2 > div > div:nth-child(9) {
+        grid-column: span 2;
+    }
+    
+    .proj a {
+        margin-top: 20px; 
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    #submenu {
+        display: none;
+    }
+
+    header > #burger_menu {
+        display: block;
+    }
+
+    header > nav > div > i {
+        color: var(--white);
+    }
+
+    #section2 > div {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
