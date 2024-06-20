@@ -130,7 +130,7 @@ body > header > nav > ul > a:nth-child(3) > li {
     color: var(--red);
 }
 
-#burger_menu {
+.burger_menu {
     display: none;
 }
 
@@ -196,6 +196,80 @@ nav > ul > div > input[type="checkbox"]:checked + label.contact-label + .modal-c
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Couleur de fond fondu */
     z-index: -1;
+}
+
+
+
+/* Animation */
+
+#submenu > a:nth-child(1) li {
+    animation: Escalier 0.1s forwards;
+    animation-delay: 0.1s;
+}
+
+#submenu > a:nth-child(2) li {
+    animation: Escalier 0.2s forwards;
+    animation-delay: 0.2s;
+}
+
+#submenu > a:nth-child(3) li {
+    animation: Escalier 0.3s forwards;
+    animation-delay: 0.3s;
+}
+
+#submenu > a:nth-child(4) li {
+    animation: Escalier 0.4s forwards;
+    animation-delay: 0.4s;
+}
+
+#submenu > a:nth-child(5) li {
+    animation: Escalier 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+#submenu > div {
+    animation: Escalier 0.6s forwards;
+    animation-delay: 0.6s;
+}
+
+
+#submenu > a li,
+#submenu > div {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#section1 {
+    opacity: 0;
+    animation: fade 1s forwards;
+    animation-delay: 0.7s; 
+}
+
+
+
+
+@keyframes Escalier {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Footer */

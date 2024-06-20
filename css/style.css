@@ -118,6 +118,7 @@ nav > ul > div > label.contact-label {
     background: var(--orange);
     color: var(--white);
     padding: 5px;
+    position: relative;
 }
 
 nav > ul > div > label.contact-label:hover {
@@ -128,7 +129,7 @@ header > nav > ul > a:nth-child(1) > li {
     color: var(--red);
 }
 
-#burger_menu {
+.burger_menu {
     display: none;
 }
 
@@ -136,12 +137,16 @@ header > nav > ul > a:nth-child(1) > li {
 .modal-content {
     display: none;
     position: absolute;
-    top: 85px; 
-    right: 205px;
+    top: 58px; 
+    right: 0px;
     max-width: 250px;
     background: var(--borderBtn);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+}
+
+#modalCheckbox:checked + .contact-label {
+    background: var(--red);
 }
 
 nav > ul > div > input[type="checkbox"]:checked + label.contact-label + .modal-content {
@@ -192,8 +197,95 @@ nav > ul > div > input[type="checkbox"]:checked + label.contact-label + .modal-c
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Couleur de fond fondu */
     z-index: -1;
+}
+
+/* Animation */
+
+#submenu > a:nth-child(1) li {
+    animation: Escalier 0.1s forwards;
+    animation-delay: 0.1s;
+}
+
+#submenu > a:nth-child(2) li {
+    animation: Escalier 0.2s forwards;
+    animation-delay: 0.2s;
+}
+
+#submenu > a:nth-child(3) li {
+    animation: Escalier 0.3s forwards;
+    animation-delay: 0.3s;
+}
+
+#submenu > a:nth-child(4) li {
+    animation: Escalier 0.4s forwards;
+    animation-delay: 0.4s;
+}
+
+#submenu > a:nth-child(5) li {
+    animation: Escalier 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+#submenu > div {
+    animation: Escalier 0.6s forwards;
+    animation-delay: 0.6s;
+}
+
+/* Réinitialisation de l'opacité et de la position initiale pour les liens */
+#submenu > a li,
+#submenu > div {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Correction de l'opacité pour section1 */
+#section1 > article {
+    animation: fade 1s forwards;
+    animation-delay: 0.9s;
+    opacity: 0;
+}
+
+#section1 img {
+    animation: fadeImg 1s forwards;
+    opacity: 0;
+    animation-delay: 0.9s;
+    z-index: -1;
+}
+
+@keyframes Escalier {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeImg {
+    0% {
+        opacity: 0;
+        transform: translateY(80px) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 /* Footer */
