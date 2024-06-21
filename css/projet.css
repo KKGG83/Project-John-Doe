@@ -133,12 +133,16 @@ body > header > nav > ul > a:nth-child(5) > li {
 .modal-content {
     display: none;
     position: absolute;
-    top: 85px; 
-    right: 205px;
+    top: 58px; 
+    right: 0px;
     max-width: 250px;
     background: var(--borderBtn);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+}
+
+#modalCheckbox:checked + .contact-label {
+    background: var(--red);
 }
 
 nav > ul > div > input[type="checkbox"]:checked + label.contact-label + .modal-content {
@@ -283,6 +287,9 @@ footer {
     background-color: var(--red);
     text-align: center;
     padding: 150px;
+    margin: 60px 0px;
+    position: relative;
+    z-index: -1;
 }
 
 /* Section2 */

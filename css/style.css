@@ -302,6 +302,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 200px;
+    margin: 60px 0px;
 }
 
 #section1 > article > div {
